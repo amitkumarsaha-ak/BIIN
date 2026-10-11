@@ -9,11 +9,20 @@ const trustees = [
   {
     name: "Syed Almas Kabir",
     role: "Chairman, Board of Trustees",
-    image: "/1234 - Copy.jpg",
+    image: "/Almas sir.jpeg",
     description:
       "Renowned ICT industry leader and policy advocate, Mr. Kabir serves as the Chairman of BIIN. With over three decades of experience in technology, entrepreneurship and public policy, he leads the strategic direction of the organization and oversees governance as a Founder Trustee.",
     quote:
       "Technology is the bridge between dreams and reality for our youth.",
+  },
+  {
+    name: "Ms. Rubaba Dowla",
+    role: "EC Member",
+    image: "/Image/Ms-Rubaba-Dowla.jpg",
+    description:
+      "As an Executive Committee Member of BIIN, Ms. Dowla contributes to strategic initiatives, organizational development, and programs that encourage innovation, youth engagement, and community growth.",
+    quote:
+      "Great teamwork turns ideas into meaningful impact.",
   },
   {
     name: "Syed Ahsan Habib",
@@ -42,15 +51,7 @@ const trustees = [
     quote:
       "Empowering youth with the right opportunities can transform ideas into lasting impact.",
   },
-  {
-    name: "Ms. Rubaba Dowla",
-    role: "EC Member",
-    image: "/Image/Ms-Rubaba-Dowla.jpg",
-    description:
-      "As an Executive Committee Member of BIIN, Ms. Dowla contributes to strategic initiatives, organizational development, and programs that encourage innovation, youth engagement, and community growth.",
-    quote:
-      "Great teamwork turns ideas into meaningful impact.",
-  },
+  
   {
     name: "Moon M. Rajib",
     role: "General Secretary & Founder Trustee",

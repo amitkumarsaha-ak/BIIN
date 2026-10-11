@@ -3,6 +3,26 @@
 import book from "../../../public/BIIN Profile Image/book_image.jpeg"
 
 export const eventsData = [
+
+{
+  id: "bangladesh-ict-innovation-awards-2026",
+  title: "Bangladesh ICT and Innovation Awards 2026",
+  slug: "bangladesh-ict-innovation-awards-2026",
+  category: "Awards",
+  date: "3 October 2026",
+  image: "/Main Photo 26.jpeg",
+  shortDescription:
+    "The Bangladesh ICT and Innovation Network (BIIN) recognised 44 innovative projects from 355 submissions at the Bangladesh ICT and Innovation Awards 2026, held at BRAC University in Dhaka.",
+  fullDescription: `The Bangladesh ICT and Innovation Network (BIIN) recognised 44 innovative projects at the Bangladesh ICT and Innovation Awards 2026, selected from 355 submissions. The ceremony was held on 3 October at BRAC University in Dhaka, where 9 projects received champion awards, 10 were named winners, and 25 received innovation merit awards.
+
+ICT Minister Fakir Mahbub Anam emphasised the importance of connecting young people with technology and turning their ideas into practical solutions. State Minister for Planning Md Zonayed Abdur Rahim Saki highlighted the role of research, science and innovation in economic development, while BIIN Chairman Syed Almas Kabir called for stronger innovation policies and increased private-sector investment in research.
+
+Among the notable projects, Sync V-1 developed a Braille printer costing only Tk 28,000, compared with approximately Tk 7 lakh for conventional models. The champion and winning projects will be nominated to represent Bangladesh at the Asia Pacific ICT Alliance (APICTA) Awards 2026.
+
+The awards highlight Bangladesh's growing innovation potential and the need for greater research funding, collaboration between government and industry, and support to transform innovative ideas into practical and affordable technologies.`
+},
+
+
   {
     id: 1,
     slug: "apicta-awards-2025",
