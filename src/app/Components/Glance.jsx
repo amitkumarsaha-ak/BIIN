@@ -274,7 +274,7 @@ const Glance = () => {
             >
               <div className="relative aspect-[6/4] overflow-hidden rounded-[22px]">
                 <Image
-                  src="/2.jfif"
+                  src="/20.jpg"
                   alt="BIIN Programs and Activities"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -328,7 +328,7 @@ const Glance = () => {
             >
               <div className="relative aspect-[4/4] overflow-hidden rounded-[22px]">
                 <Image
-                  src="/1.jfif"
+                  src="/10.jpg"
                   alt="BIIN Impact and Achievements"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
