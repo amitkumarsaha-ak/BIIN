@@ -12,8 +12,6 @@ import {
   FaUsers,
   FaRocket,
 } from "react-icons/fa";
-import about2 from "../../../public/about2.jpeg";
-import about from "../../../public/about.jpg";
 
 const impactMetrics = [
   {
@@ -120,9 +118,7 @@ const metricItem = {
 const Glance = () => {
   return (
     <section className="relative overflow-hidden bg-[#f7f8fa] py-16 sm:py-20 lg:py-24">
-      {/* ------------------------------------------------
-          Background decoration
-      ------------------------------------------------ */}
+      {/* Background decoration */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -left-32 top-0 h-72 w-72 rounded-full bg-emerald-100/50 blur-3xl" />
 
@@ -141,9 +137,7 @@ const Glance = () => {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* ------------------------------------------------
-            Section Header
-        ------------------------------------------------ */}
+        {/* Section Header */}
         <motion.div
           variants={reveal}
           initial="hidden"
@@ -168,9 +162,7 @@ const Glance = () => {
           </p>
         </motion.div>
 
-        {/* ------------------------------------------------
-            Impact Metrics
-        ------------------------------------------------ */}
+        {/* Impact Metrics */}
         <motion.div
           variants={metricContainer}
           initial="hidden"
@@ -214,9 +206,7 @@ const Glance = () => {
           ))}
         </motion.div>
 
-        {/* ------------------------------------------------
-            Featured Programs
-        ------------------------------------------------ */}
+        {/* Featured Programs */}
         <motion.div
           variants={reveal}
           initial="hidden"
@@ -268,7 +258,7 @@ const Glance = () => {
               </div>
             </div>
 
-            {/* Image */}
+            {/* Featured Programs Image */}
             <motion.a
               href="https://forms.gle/tqTmSpieThsCeQFV6"
               target="_blank"
@@ -282,9 +272,9 @@ const Glance = () => {
               }}
               className="group relative block overflow-hidden rounded-[28px] border border-slate-200 bg-white p-2 shadow-[0_20px_50px_rgba(15,23,42,0.10)]"
             >
-              <div className="relative aspect-[4/4] overflow-hidden rounded-[22px]">
+              <div className="relative aspect-[6/4] overflow-hidden rounded-[22px]">
                 <Image
-                  src={about}
+                  src="/2.jfif"
                   alt="BIIN Programs and Activities"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -298,8 +288,9 @@ const Glance = () => {
                     <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/70">
                       BIIN
                     </p>
+
                     <p className="mt-1 text-lg font-bold">
-                      Programs & Activities
+                      Programs &amp; Activities
                     </p>
                   </div>
 
@@ -312,9 +303,7 @@ const Glance = () => {
           </div>
         </motion.div>
 
-        {/* ------------------------------------------------
-            Strategic Initiatives
-        ------------------------------------------------ */}
+        {/* Strategic Initiatives */}
         <motion.div
           variants={reveal}
           initial="hidden"
@@ -323,7 +312,7 @@ const Glance = () => {
           className="mt-16 sm:mt-20"
         >
           <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
-            {/* Image */}
+            {/* Strategic Initiatives Image */}
             <motion.a
               href="https://forms.gle/5GYLHndDiLfrc5br6"
               target="_blank"
@@ -339,7 +328,7 @@ const Glance = () => {
             >
               <div className="relative aspect-[4/4] overflow-hidden rounded-[22px]">
                 <Image
-                  src={about2}
+                  src="/1.jfif"
                   alt="BIIN Impact and Achievements"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -353,8 +342,9 @@ const Glance = () => {
                     <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/70">
                       BIIN
                     </p>
+
                     <p className="mt-1 text-lg font-bold">
-                      Impact & Achievements
+                      Impact &amp; Achievements
                     </p>
                   </div>
 

@@ -7,30 +7,36 @@ import { FaLightbulb, FaEye, FaChevronLeft, FaChevronRight } from "react-icons/f
 // Event images for Mission section (remaining 5 images)
 const missionImages = [
   {
-    src: "/Resize Image/0-06.jpg",
-    title: "Cyber Security Seminar",
-    date: "November 8, 2023",
+    src: "/Resize Image/4.jpeg",
+    title: "BIIN Welcomes New Campus Ambassadors from Leading Universities Across Bangladesh",
+    //date: "November 8, 2023",
   },
   {
-    src: "/Resize Image/0-07.jpg",
-    title: "Coordination Meeting ",
-    date: "April 21, 2024",
+    src: "/Resize Image/14.jpeg",
+    title: "BIIN Executive Committee Meeting Focuses on Youth Empowerment, Strategic Partnerships, and ICT Innovation in Bangladesh",
+    //date: "April 21, 2024",
   },
   {
-    src: "/Resize Image/0-08.jpg",
-    title: "Book on BIIN’s Role in the July Revolution",
-    date: "August 11, 2024",
+    src: "/Resize Image/13.jfif",
+    title: "BIIN and DCMA Sign MoU to Empower Students Through Entrepreneurship, Leadership, and Innovation",
+    //date: "August 11, 2024",
   },
   {
-    src: "/Resize Image/0-03.jpg",
-    title: "Startup Adda ",
-    date: "July 31, 2023",
+    src: "/Resize Image/11.jpg",
+    title: "BIIN Celebrates Safer Internet Day 2026 Quiz Winners with Award Ceremony",
+    //date: "July 31, 2023",
   },
 
   {
-    src: "/Resize Image/0-11.jpg",
-    title: "5000-Member Celebration of BIIN ",
-    date: "August 4, 2023",
+    src: "/Resize Image/3.jpeg",
+    title: "BIIN and EWU Robotics Club Sign MoU to Foster Innovation, Robotics, and Youth Entrepreneurship",
+    //date: "August 4, 2023",
+  },
+
+  {
+    src: "/Resize Image/10.jpg",
+    title: "BIIN Showcases ICT Innovation and Youth Empowerment Initiatives at Job Fair 2026",
+    //date: "August 4, 2023",
   },
 ];
 
@@ -43,7 +49,7 @@ const Mission = () => {
       setCurrentIndex((prevIndex) => 
         prevIndex === missionImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // Change slide every 4 seconds
+    }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -93,7 +99,7 @@ const Mission = () => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
-                  className="relative aspect-[4/3] w-full"
+                  className="relative aspect-[5/3] w-full"
                 >
                   <Image
                     src={missionImages[currentIndex].src}

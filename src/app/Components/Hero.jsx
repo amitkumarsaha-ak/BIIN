@@ -12,21 +12,21 @@ import {
 
 const stats = [
   {
-    icon: <FaUserGraduate size={22} className="text-blue-500" />,
+    icon: <FaUserGraduate size={20} className="text-blue-500" />,
     label: "Students Empowered",
     value: "10,000+",
     bg: "bg-blue-50",
     border: "border-blue-200",
   },
   {
-    icon: <FaHandshake size={22} className="text-emerald-500" />,
+    icon: <FaHandshake size={20} className="text-emerald-500" />,
     label: "Partner Organizations",
     value: "50+",
     bg: "bg-emerald-50",
     border: "border-emerald-200",
   },
   {
-    icon: <FaLightbulb size={22} className="text-yellow-500" />,
+    icon: <FaLightbulb size={20} className="text-yellow-500" />,
     label: "Active Chapters",
     value: "50+",
     bg: "bg-yellow-50",
@@ -36,385 +36,218 @@ const stats = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#152a6e]">
-
-      {/* =========================================================
-          HERO BACKGROUND IMAGE
-          ========================================================= */}
-      <div className="absolute inset-0 z-[1]">
+    <section className="relative isolate overflow-hidden bg-[#0b1738]">
+      {/* HERO BACKGROUND IMAGE */}
+      <div className="absolute inset-0 z-[-2]">
         <img
           src="/1770013187869.jpg"
           alt="BIIN - Empowering Youth Through Technology"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="h-full w-full object-cover object-center"
         />
       </div>
 
-      {/* =========================================================
-          PROFESSIONAL READABILITY OVERLAY
-          
-          Strong on left where text exists.
-          Gradually becomes transparent toward right
-          so the original image remains visible.
-          ========================================================= */}
+      {/* IMAGE OVERLAY */}
       <div
         className="
-          absolute inset-0 z-[2]
+          pointer-events-none absolute inset-0 z-[-1]
           bg-gradient-to-r
-          from-[#061432]/95
-          via-[#0b2450]/75
-          via-[45%]
-          to-transparent
+          from-[#08142d]/55
+          via-[#0b1738]/25
+          to-[#0b1738]/10
         "
       />
 
-      {/* =========================================================
-          SUBTLE OVERALL IMAGE TINT
-          ========================================================= */}
-      <div className="absolute inset-0 z-[3] bg-[#061432]/10" />
+      {/* BOTTOM GRADIENT */}
+      <div className="pointer-events-none absolute inset-0 z-[-1] bg-gradient-to-t from-[#08142d]/40 via-transparent to-[#08142d]/10" />
 
-      {/* =========================================================
-          DECORATIVE GLOW
-          ========================================================= */}
-      <div className="absolute -top-20 -left-20 z-[4] w-72 h-72 bg-emerald-400/15 rounded-full blur-3xl" />
-
-      <div className="absolute -bottom-32 -right-32 z-[4] w-96 h-96 bg-indigo-400/15 rounded-full blur-3xl" />
-
-      <div className="absolute top-1/3 right-1/4 z-[4] w-64 h-64 bg-teal-400/10 rounded-full blur-3xl" />
-
-      {/* =========================================================
-          HERO CONTENT
-          ========================================================= */}
-      <div className="relative z-[20] min-h-screen flex items-center">
-
-        <div className="w-11/12 max-w-7xl mx-auto">
-
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.15fr] items-end md:gap-x-14 lg:gap-x-20 xl:gap-x-24">
-
-            {/* =====================================================
-                LEFT CONTENT
-                ===================================================== */}
-            <div
-              className="
-                flex flex-col
-                items-center md:items-start
-                pt-10 sm:pt-12 md:pt-8 lg:pt-10
-                pb-10 md:pb-12
-                relative z-[20]
-                md:-ml-6 lg:-ml-10
-              "
-            >
-
-              {/* =================================================
-                  MAIN HEADING
-                  ================================================= */}
+      {/* HERO CONTENT */}
+      <div className="relative z-10 flex min-h-[540px] items-center py-14 sm:min-h-[580px] sm:py-16 lg:min-h-[640px] lg:py-20">
+        <div className="mx-auto w-11/12 max-w-7xl">
+          <div className="grid grid-cols-1 items-center md:grid-cols-[1.1fr_0.9fr] md:gap-8 lg:gap-12">
+            {/* LEFT CONTENT */}
+            <div className="relative z-10 flex flex-col items-center text-center md:items-start md:text-left">
+              {/* MAIN HEADING */}
               <motion.h1
-                initial={{ y: 40, opacity: 0 }}
+                initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
-                  duration: 1,
+                  duration: 0.8,
                   type: "spring",
+                  stiffness: 90,
                 }}
                 className="
-                  text-2xl
-                  sm:text-3xl
-                  md:text-4xl
-                  lg:text-5xl
-                  font-extrabold
-                  text-yellow-400
-                  text-center md:text-left
-                  drop-shadow-[0_4px_12px_rgba(0,0,0,0.65)]
-                  pb-2
+                  max-w-3xl text-3xl font-extrabold leading-[1.08]
+                  tracking-tight text-white
+                  drop-shadow-[0_3px_8px_rgba(0,0,0,0.3)]
+                  sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
                 "
               >
                 Bangladesh ICT &
               </motion.h1>
 
-              {/* =================================================
-                  SECOND HEADING
-                  ================================================= */}
+              {/* SECOND HEADING */}
               <motion.h1
-                initial={{ y: 40, opacity: 0 }}
+                initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
-                  duration: 1.2,
+                  duration: 1,
                   type: "spring",
+                  stiffness: 90,
                 }}
                 className="
-                  text-2xl
-                  sm:text-3xl
-                  md:text-4xl
-                  lg:text-5xl
-                  font-extrabold
-                  text-white
-                  text-center md:text-left
-                  drop-shadow-[0_4px_12px_rgba(0,0,0,0.75)]
-                  mt-1
+                  mt-1 max-w-4xl text-3xl font-extrabold leading-[1.08]
+                  tracking-tight text-[#65e6bd]
+                  drop-shadow-[0_3px_8px_rgba(0,0,0,0.3)]
+                  sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl
                 "
               >
-                Innovation{" "}
-                <span className="text-emerald-400">
-                  Network
-                </span>
+                Innovation Network
               </motion.h1>
 
-              {/* =================================================
-                  SUB HEADING
-                  ================================================= */}
-              <motion.h2
-                initial={{ y: 40, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 1.4,
-                  type: "spring",
-                }}
-                className="
-                  text-lg
-                  sm:text-xl
-                  md:text-2xl
-                  lg:text-3xl
-                  font-bold
-                  text-emerald-300
-                  text-center md:text-left
-                  mt-3 sm:mt-4
-                  max-w-2xl
-                  drop-shadow-[0_3px_8px_rgba(0,0,0,0.8)]
-                "
-              >
-                Empowering Youth Through Technology & Innovation
-              </motion.h2>
-
-              {/* =================================================
-                  DESCRIPTION
-                  ================================================= */}
+              {/* DESCRIPTION */}
               <motion.p
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3,
-                  duration: 1,
+                  delay: 0.25,
+                  duration: 0.8,
                 }}
                 className="
-                  text-sm
-                  sm:text-base
-                  md:text-lg
+                  mt-5 max-w-xl text-sm font-normal leading-relaxed
                   text-white
-                  mt-3
-                  sm:mt-5
-                  mb-4
-                  sm:mb-6
-                  text-center
-                  md:text-left
-                  max-w-lg
-                  leading-relaxed
-                  drop-shadow-[0_3px_8px_rgba(0,0,0,0.9)]
+                  drop-shadow-[0_2px_6px_rgba(0,0,0,0.45)]
+                  sm:mt-6 sm:text-base md:text-lg lg:text-xl
                 "
               >
-                Welcome to BIIN – Bangladesh ICT & Innovation Network,
-                a registered non-profit trust dedicated to transforming
-                the future of Bangladesh through ICT skill development,
-                startup incubation and youth empowerment.
+                A registered non-profit trust empowering Bangladesh&apos;s
+                youth through ICT skills, startup incubation, and digital
+                innovation.
               </motion.p>
 
-              {/* =================================================
-                  BUTTONS
-                  ================================================= */}
+              {/* BUTTONS */}
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.5,
-                  duration: 1,
+                  delay: 0.4,
+                  duration: 0.8,
                 }}
                 className="
-                  w-full
-                  flex flex-col
-                  sm:flex-row
-                  gap-3
-                  sm:gap-4
-                  justify-center
-                  md:justify-start
-                  items-center
-                  md:items-start
+                  mt-7 flex w-full flex-col items-center gap-3
+                  sm:w-auto sm:flex-row sm:gap-4 md:mt-8
                 "
               >
-
                 {/* JOIN BIIN */}
                 <Link
                   href="/get-involved"
                   className="
-                    inline-flex
-                    items-center
-                    gap-2
-                    px-5
-                    sm:px-6
-                    py-2.5
-                    sm:py-3
-                    rounded-full
-                    bg-gradient-to-r
-                    from-emerald-500
-                    to-teal-500
-                    text-white
-                    font-semibold
-                    shadow-xl
-                    hover:from-teal-500
-                    hover:to-emerald-500
-                    transition-all
-                    duration-200
-                    hover:scale-105
-                    focus:outline-none
-                    focus:ring-2
-                    focus:ring-emerald-400
-                    text-sm
-                    sm:text-base
+                    group inline-flex min-h-[48px] items-center
+                    justify-center gap-2 rounded-xl
+                    bg-emerald-500 px-6 py-3
+                    text-sm font-semibold text-white
+                    shadow-lg shadow-emerald-950/20
+                    transition-all duration-300
+                    hover:-translate-y-1 hover:bg-emerald-400
+                    hover:shadow-xl
+                    focus:outline-none focus:ring-2
+                    focus:ring-emerald-300 focus:ring-offset-2
+                    focus:ring-offset-[#0b1738]
+                    sm:min-w-[150px] sm:text-base
                   "
                 >
                   Join BIIN
-                  <FiArrowRight size={20} />
+                  <FiArrowRight
+                    size={19}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
                 </Link>
 
                 {/* LEARN MORE */}
                 <Link
                   href="/about"
                   className="
-                    inline-flex
-                    items-center
-                    gap-2
-                    px-5
-                    sm:px-6
-                    py-2.5
-                    sm:py-3
-                    rounded-full
-                    border-2
-                    border-emerald-400
-                    text-white
-                    font-semibold
-                    bg-black/10
-                    hover:bg-emerald-500
-                    hover:text-white
-                    transition-all
-                    duration-200
-                    hover:scale-105
-                    focus:outline-none
-                    focus:ring-2
-                    focus:ring-emerald-400
-                    text-sm
-                    sm:text-base
+                    inline-flex min-h-[48px] items-center
+                    justify-center rounded-xl
+                    border border-white/40
+                    bg-white/[0.07] px-6 py-3
+                    text-sm font-semibold text-white
+                    backdrop-blur-sm
+                    transition-all duration-300
+                    hover:-translate-y-1 hover:border-white/60
+                    hover:bg-white/15
+                    focus:outline-none focus:ring-2
+                    focus:ring-white/60 focus:ring-offset-2
+                    focus:ring-offset-[#0b1738]
+                    sm:min-w-[150px] sm:text-base
                   "
                 >
                   Learn more
                 </Link>
-
               </motion.div>
             </div>
 
-            {/* =====================================================
-                RIGHT SIDE
-                Image remains visible here
-                ===================================================== */}
-            <div className="hidden md:block" />
-
+            {/* RIGHT SIDE: BACKGROUND IMAGE VISIBLE */}
+            <div
+              aria-hidden="true"
+              className="hidden min-h-[260px] md:block lg:min-h-[340px]"
+            />
           </div>
         </div>
       </div>
 
-      {/* =========================================================
-          STATS CARD
-          ========================================================= */}
-      <div
-        className="
-          relative
-          z-[30]
-          flex
-          justify-center
-          pt-8
-          sm:pt-10
-          md:pt-12
-          pb-10
-          sm:pb-12
-          md:pb-16
-        "
-      >
-
+      {/* STATS CARDS */}
+      <div className="relative z-10 flex justify-center px-4 pb-10 pt-2 sm:px-6 sm:pb-12 lg:pb-16">
         <div
           className="
-            w-11/12
-            max-w-4xl
-            grid
-            grid-cols-1
-            sm:grid-cols-3
-            gap-3
-            sm:gap-6
-            bg-white/90
+            grid w-full max-w-4xl grid-cols-1 gap-3
+            rounded-2xl border border-white/30
+            bg-white/95 p-3 shadow-2xl
             backdrop-blur-md
-            shadow-2xl
-            rounded-2xl
-            py-5
-            sm:py-7
-            px-3
-            sm:px-8
+            sm:grid-cols-3 sm:gap-4 sm:p-5
           "
         >
-
-          {stats.map((stat) => (
-            <div
+          {stats.map((stat, index) => (
+            <motion.div
               key={stat.label}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.12,
+              }}
               className={`
-                flex
-                flex-col
-                items-center
-                justify-center
-                gap-1
-                sm:gap-3
-                py-3
-                sm:py-4
-                px-1
-                sm:px-2
-                rounded-xl
-                border
-                ${stat.bg}
-                ${stat.border}
-                hover:shadow-lg
-                transition-shadow
-                duration-200
+                flex flex-col items-center justify-center
+                gap-2 rounded-xl border px-3 py-4
+                transition-all duration-300 hover:-translate-y-1
+                hover:shadow-lg sm:py-5
+                ${stat.bg} ${stat.border}
               `}
             >
-
               {/* ICON */}
               <div
                 className="
-                  flex
-                  items-center
-                  justify-center
-                  w-10
-                  h-10
-                  sm:w-16
-                  sm:h-16
-                  rounded-full
-                  bg-white
-                  shadow-md
-                  mb-1
-                  sm:mb-2
+                  flex h-10 w-10 items-center justify-center
+                  rounded-full bg-white shadow-md
+                  sm:h-12 sm:w-12
                 "
               >
                 {stat.icon}
               </div>
 
               {/* VALUE */}
-              <p className="text-base sm:text-2xl font-bold text-gray-800">
+              <p className="text-lg font-bold text-gray-800 sm:text-xl">
                 {stat.value}
               </p>
 
               {/* LABEL */}
-              <p className="text-gray-500 font-medium text-center text-xs sm:text-sm">
+              <p className="text-center text-xs font-medium text-gray-600 sm:text-sm">
                 {stat.label}
               </p>
-
-            </div>
+            </motion.div>
           ))}
-
         </div>
       </div>
-
     </section>
   );
 };

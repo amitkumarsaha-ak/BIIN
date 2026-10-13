@@ -9,36 +9,51 @@ import { FaUsers, FaGlobe, FaHandshake, FaLightbulb, FaChevronLeft, FaChevronRig
 // Event images for About Us section (first 6 images)
 const eventImages = [
   {
-    src: "/Resize Image/0-10.jpg",
-    title: "Asia Pacific ICT Alliance Awards 2025 ",
-    date: "December 08, 2025",
+    src: "/Resize Image/2.jpeg",
+    title: "Community Meetup 2026",
+    //date: "September 20, 2025",
   },
+  
+  {
+    src: "/Resize Image/8.jpeg",
+    title: "Bangladesh ICT & Innovation Awards 2026",
+    //date: "October 18, 2025",
+  },
+  
+  {
+    src: "/Resize Image/9.jpeg",
+    title: "BIIN Strengthens Regional Partnerships Through Strategic ICT and Innovation Dialogue",
+    //date: "October 20, 2024",
+  },
+  
+  
+  
 
   // {
   //   src: "/BIIN Profile Image/Book on BIIN's Role in the July Revolution (August 11, 2024).jpg",
   //   title: "Book on BIIN's Role in the July Revolution",
   //   date: "August 11, 2024",
   // },
+  
+  
+
+  
   {
-    src: "/Resize Image/0-09.jpg",
-    title: "Bangladesh ICT & Innovation Awards 2025",
-    date: "October 18, 2025",
-  },
-  {
-    src: "/Resize Image/0-01.jpg",
-    title: "Workshop for TMGB Members (Tech Journalist)",
-    date: "September 20, 2025",
+    src: "/Resize Image/6.jpg",
+    title: "BIIN Celebrates Its Volunteers at a Special Appreciation Dinner Honoring Youth Leadership and Teamwork",
+    //date: "July 14, 2024",
   },
 
   {
-    src: "/Resize Image/0-04.jpg",
-    title: "Medical Support for Injured Student Activists",
-    date: "October 20, 2024",
+    src: "/Resize Image/15.jpeg",
+    title: "BIIN Family",
+    //date: "July 14, 2024",
   },
+
   {
-    src: "/Resize Image/0-05.jpg",
-    title: "ICANN Outreach Program",
-    date: "July 14, 2024",
+    src: "/Resize Image/0-10.jpg",
+    title: "Asia Pacific ICT Alliance Awards 2025 ",
+    date: "December 08, 2025",
   },
 ];
 
@@ -51,7 +66,7 @@ const AboutUs = () => {
       setCurrentIndex((prevIndex) => 
         prevIndex === eventImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // Change slide every 4 seconds
+    }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -129,7 +144,7 @@ const AboutUs = () => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -100 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                    className="relative aspect-[4/3] w-full"
+                    className="relative aspect-[5/3] w-full"
                   >
                     <Image
                       src={eventImages[currentIndex].src}
