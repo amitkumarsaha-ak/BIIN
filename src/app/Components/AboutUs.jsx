@@ -39,7 +39,7 @@ const eventImages = [
 
   
   {
-    src: "/Resize Image/6.jpg",
+    src: "/Resize Image/19.png",
     title: "BIIN Celebrates Its Volunteers at a Special Appreciation Dinner Honoring Youth Leadership and Teamwork",
     //date: "July 14, 2024",
   },

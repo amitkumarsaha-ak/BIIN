@@ -17,7 +17,7 @@ const missionImages = [
     //date: "April 21, 2024",
   },
   {
-    src: "/Resize Image/13.jfif",
+    src: "/Resize Image/16.jpg",
     title: "BIIN and DCMA Sign MoU to Empower Students Through Entrepreneurship, Leadership, and Innovation",
     //date: "August 11, 2024",
   },
